@@ -1,0 +1,23 @@
+# 대상 환경: Windows 11, Python 3.10, NVIDIA GPU (CUDA 12.8 빌드의 PyTorch)
+# 설치 (가상환경 활성화 후):
+#   uv pip install -r requirements.txt --index-strategy unsafe-best-match
+#   또는 pip install -r requirements.txt
+#
+# torch/torchvision은 CUDA 빌드를 받기 위해 PyTorch 전용 인덱스를 우선 사용합니다.
+--extra-index-url https://download.pytorch.org/whl/cu128
+
+torch==2.11.0+cu128
+torchvision==0.26.0+cu128
+transformers>=4.46
+datasets>=2.19
+diffusers>=0.30
+accelerate
+peft>=0.12
+chromadb>=0.5
+flask>=3.0
+requests
+pillow
+matplotlib
+scikit-learn
+jupyterlab
+ipykernel
